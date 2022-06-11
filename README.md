@@ -1,10 +1,12 @@
-# UpFile
+# upfile-builder
+Powered by Upfile protocol
 
 ## Upload files into the BitcoinSV blockchain network with Upfile-builder
-Upfile-builder is a package from the Upfile project which allows the services to upload files to the BSV blockchain. The Upfile-builder creates the required outputs for the transaction(s) and passes them to a handler. The handler is responsible for making the payment, broadcasting the transaction(s), and returning the transaction ID. This ID is the key to finding all the transactions. Below is an example that uses the upfile-builder with Handcash connect as a handler.
+Upfile-builder is a package from the Upfile project which allows the services to upload files into the BSV blockchain. The Upfile-builder creates the required outputs for the transaction(s) and passes them to a handler. The handler is responsible for making the payment, broadcasting the transaction(s), and returning the transaction ID. This ID is the key to finding all the transactions. Below is an example that uses the upfile-builder with Handcash connect as a handler.
 
 ```
 npm install upfile-builder
+npm install @handcash/handcash-connect
 ```
 
 ```js
@@ -69,7 +71,7 @@ Result:
   size: 3252913
 }
 
-File can be accessed by hosting Upfile-server or using our instance on https://cdn.upfile.space
+The file can be accessed by hosting Upfile-server or using our instance on https://cdn.upfile.space
 
 i.e. 
 https://cdn.upfile.space/<key>
