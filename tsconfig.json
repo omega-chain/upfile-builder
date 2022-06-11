@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "exactOptionalPropertyTypes": true,
+    "declaration": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true
+  }
+}

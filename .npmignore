@@ -1,0 +1,10 @@
+.vscode
+node_modules
+src
+.gitignore
+.git
+.package-lock.json
+start.sh
+test.js
+test.sh
+tsconfig*

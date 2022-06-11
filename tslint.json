@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "tslint:all"
+  ],
+  "rules": {
+    "no-default-import":false,
+    "align": false,
+    "max-line-length": false,
+    "newline-per-chained-call": false,
+    "trailing-comma": false,
+    "ordered-imports": false,
+    "prefer-function-over-method": false,
+    "object-literal-sort-keys": false,
+    "no-unnecessary-class": false,
+    "member-ordering": false,
+    "variable-name": false,
+    "no-parameter-reassignment": false,
+    "no-inferrable-types": false,
+    "no-magic-numbers": false,
+    "object-literal-shorthand": false,
+    "no-shadowed-variable": false,
+    "no-default-export": false,
+    "comment-format": false,
+    "completed-docs": false,
+    "strict-boolean-expressions": false,
+    "cyclomatic-complexity": false,
+    "no-console": false,
+    "file-name-casing": false,
+    "only-arrow-functions": false,
+    "prefer-template": false,
+    "no-any": false
+  }
+}

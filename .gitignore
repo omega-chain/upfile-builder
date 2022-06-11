@@ -1,0 +1,7 @@
+.git
+dist
+logs
+start.sh
+package-lock.json
+**/node_modules
+test.js
