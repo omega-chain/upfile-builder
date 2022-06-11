@@ -8,12 +8,9 @@ Upfile-builder is a package from the Upfile project which allows the services to
 npm install upfile-builder
 npm install @handcash/handcash-connect
 ```
-
+## First, import a handler(in this example handcash-connect) to handle the payments and teh transactions broadcasts.
 ```js
-// Import Handcash connect to handle the transactions.
 const { HandCashConnect } = require("@handcash/handcash-connect");
-// Import upfile-builder to upload files into BSV blockchain.
-const { write } = require("upfile-builder"); // Import the module
 
 const authToken = "AUTH_TOKEN"; // Replace with your auth token
 const handcash = new HandCashConnect({
@@ -39,7 +36,11 @@ async function payScriptHandler(script) {
   }
   throw result;
 }
-
+```
+## Now, use upfile-builder to make chunks of data to pass to the handler
+```js
+// Import upfile-builder to upload files into BSV blockchain.
+const { write } = require("upfile-builder"); // Import the module
 const filePath = "/path/to/the/file/IMG_1866.JPG"; //Path of the file(any format)
 const fileName = "IMG_1866.JPG"; //The file name Shown in the transaction
 
