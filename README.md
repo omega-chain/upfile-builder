@@ -45,6 +45,7 @@ const filePath = "/path/to/the/file/IMG_1866.JPG"; //Path of the file(any format
 const fileName = "IMG_1866.JPG"; //The file name Shown in the transaction
 
 // specify the transaction chunk size in bytes(size of each transaction if the file is more than chunk size)
+// the smaller chunks will increase the number of the transactions but it will provide a better streaming when downloading big files like videos, etc.
 const chunkSize = 50 * 1024; //50KB
 const mimeType = "auto"; //Auto set of mimetype by the file extension
 
