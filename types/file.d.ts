@@ -2,6 +2,7 @@ export interface IFileBase {
   filename?: string;
   mime?: string;
   size: number;
+  description: string;
   chuncksize?: number;
   version: 1;
 }
@@ -28,4 +29,5 @@ export interface IFileUploadedResult {
   filename: string;
   mime: string;
   size: number;
+  description: string;
 }

@@ -9,6 +9,7 @@ export class UpFileSystemBuilder {
   static async build(
     filePath: string,
     filename?: string,
+    description?: string,
     mimeType: string = 'auto',
     chunkSize: number = 51200
   ): Promise<IFileBuild> {
@@ -29,6 +30,7 @@ export class UpFileSystemBuilder {
         filename: filename!,
         mime: mime!,
         size: stat.size,
+        description: description!,
         data: buffer.toString('base64').replace(/=/g, '')
       };
       Utility.removeEmpty(json);
@@ -37,8 +39,9 @@ export class UpFileSystemBuilder {
       return {
         version: 1,
         filename: filename!,
-        size: stat.size,
         mime: mime!,
+        size: stat.size,
+        description: description!,
         chuncksize: chunkSize,
         chunksDataHex: [TAG_HEX + Buffer.from(JSON.stringify(json), 'utf-8').toString('hex')]
       };
@@ -61,6 +64,7 @@ export class UpFileSystemBuilder {
       filename: filename!,
       size: stat.size,
       mime: mime!,
+      description: description!,
       chuncksize: chunkSize,
       chunksDataHex: chunks
     };

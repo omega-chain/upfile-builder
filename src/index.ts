@@ -16,6 +16,7 @@ export async function write(
   filename: string,
   mimeType: string,
   chuncksize: number,
+  description: string,
   broadcastScriptIterator: (script: string) => Promise<string>
 ): Promise<IFileUploadedResult> {
   /**
@@ -27,7 +28,13 @@ export async function write(
    * and finally all transactions ids put in header transaction that is
    * start point of file
    */
-  const result = await UpFileSystemBuilder.build(filePath, filename, mimeType, chuncksize);
+  const result = await UpFileSystemBuilder.build(
+    filePath,
+    filename,
+    description,
+    mimeType,
+    chuncksize
+  );
 
   /**
    * Single file transaction
@@ -39,7 +46,8 @@ export async function write(
       key: writeTransactionId,
       filename: result.filename!,
       mime: result.mime!,
-      size: result.size
+      size: result.size,
+      description
     };
   }
 
@@ -57,6 +65,7 @@ export async function write(
     filename: result.filename!,
     mime: result.mime!,
     size: result.size,
+    description: result.description,
     chuncksize: result.chuncksize!,
     chunks: txids
   };
@@ -69,6 +78,7 @@ export async function write(
     key: writeHeaderTransactionId,
     filename: result.filename!,
     mime: result.mime!,
-    size: result.size
+    size: result.size,
+    description
   };
 }

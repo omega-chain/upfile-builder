@@ -1,6 +1,6 @@
 {
   "name": "upfile-builder",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Build UFS(Up File System) transactions",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
