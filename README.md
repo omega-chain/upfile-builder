@@ -81,7 +81,7 @@ Result:
   size: 3252913
 }
 
-The file can be accessed by hosting Upfile-server or using our instance on https://cdn.upfile.space
+The file can be accessed by running Upfile-server source code which is available on https://github.com/omega-chain/upfile-server or using our instance on https://cdn.upfile.space
 
 i.e. 
 https://cdn.upfile.space/<key>
