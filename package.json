@@ -1,9 +1,17 @@
 {
   "name": "upfile-builder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Build UFS(Up File System) transactions",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "keywords": [
+    "upload",
+    "download",
+    "blockchain",
+    "timestamp",
+    "bitcoin",
+    "bsv"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "precommit": "lint-staged",
