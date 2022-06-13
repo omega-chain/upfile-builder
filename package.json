@@ -1,6 +1,6 @@
 {
   "name": "upfile-builder",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Build UFS(Up File System) transactions",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,24 +16,16 @@
   },
   "author": "",
   "dependencies": {
-    "@handcash/handcash-connect": "^0.4.2",
-    "async": "^2.6.1",
-    "lodash": "^4.17.11",
     "mime-types": "^2.1.35",
-    "prettier": "^2.6.2",
-    "promise-fs": "^2.1.1",
-    "request": "^2.88.2"
+    "promise-fs": "^2.1.1"
   },
   "devDependencies": {
-    "@types/async": "^2.0.50",
-    "@types/body-parser": "^1.17.0",
     "@types/debug": "0.0.30",
-    "@types/lodash": "^4.14.117",
     "@types/mime-types": "^2.1.1",
     "@types/promise-fs": "^2.1.2",
-    "@types/request": "^2.48.8",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
+    "prettier": "^2.6.2",
     "source-map-support": "^0.5.9",
     "tslint": "^5.11.0",
     "typescript": "^4.7.3"
